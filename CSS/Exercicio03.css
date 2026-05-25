@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(17, 15, 31);
+}
+
+.conteiner-a {
+    display: grid;
+    height: 90vh;
+    grid-auto-rows: 25% 50% 25%;
+    grid-template-areas:
+        'header header header'
+        'aside main main'
+        'footer footer footer';
+    gap: 10px;
+}
+
+.conteiner-b {
+    display: grid;
+    grid-template-areas:
+        'cima cima'
+        'cima cima'
+        'esq dir';
+    gap: 10px;
+}
+
+.box1 {
+    background-color: aqua;
+    grid-area: header;
+}
+
+.box2 {
+    background-color: bisque;
+    grid-area: aside;
+}
+
+.box6 {
+    background-color: gold;
+    grid-area: footer;
+}
+
+.conteiner-b {
+    grid-area: main;
+}
+
+.box3 {
+    background-color: chartreuse;
+    grid-area: cima;
+}
+
+.box4 {
+    background-color: darkcyan;
+    grid-area: esq;
+}
+
+.box5 {
+    background-color: firebrick;
+    grid-area: dir;
+}

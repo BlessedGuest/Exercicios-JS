@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02 - JS</title>
+</head>
+
+<body>
+    <div class="conteiner-geral">
+        <div class="box1">HOME</div>
+        <div class="box2">MENU</div>
+        <div class="box3">ARTIGO 1</div>
+        <div class="box4">RODAPÉ</div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteiner-geral {
+        height: 100vh;
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+            'header header header'
+            'aside section section'
+            'footer footer footer';
+        grid-auto-rows: 25% 60% 15%;
+    }
+
+    .box1 {
+        width: 100%;
+        grid-area: header;
+        background-color: aqua;
+    }
+
+    .box2 {
+        width: 100%;
+        grid-area: aside;
+        background-color: rgb(0, 255, 47);
+    }
+
+    .box3 {
+        width: 100%;
+        grid-area: section;
+        background-color: rgb(255, 191, 0);
+    }
+
+    .box4 {
+        width: 100%;
+        grid-area: footer;
+        background-color: rgb(255, 0, 195);
+    }
+</style>
+
+</html>
