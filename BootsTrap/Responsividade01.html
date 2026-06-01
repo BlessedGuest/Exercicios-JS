@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+</head>
+<style>
+    h1{
+        display:flex;
+        justify-self: center;
+        align-self: center;
+    }
+    @media (max-width:575.99px) {
+        body {
+            background-color: blue;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    @media (min-width:575.99px) and (max-width:767.99px) {
+        body {
+            background-color: rgb(23, 23, 251);
+            color: rgb(219, 219, 219);
+        }
+    }
+
+    @media (min-width:768px) and (max-width:991.99px) {
+        body {
+            background-color: rgb(65, 65, 255);
+            color: rgb(171, 171, 171);
+        }
+    }
+
+    @media (min-width:992px) and (max-width:1199.99px) {
+        body {
+            background-color: rgb(118, 118, 255);
+            color: rgb(79, 79, 79);
+        }
+    }
+
+    @media (min-width:1200px) {
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+    }
+</style>
+
+<body>
+    <h1>Diminua a tela!</h1>
+</body>
+
+</html>
