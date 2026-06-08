@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 122, 26);
+}
+
+.cab {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(255, 122, 26);
+    border-bottom: 1px solid rgb(255, 122, 26);
+}
+
+.cab img {
+    margin-left: 40px;
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+}
+
+.menu p {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-left: 2px solid rgb(255, 122, 26);
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.menu p:hover {
+    font-size: 20px;
+    cursor: pointer;
+    color: orange;
+    background-color: gray;
+    border-left: 2px solid rgb(255, 122, 26);
+    border-radius: 10px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner:hover {
+    opacity: 0.9;
+    cursor:pointer;
+}
+
+.info {
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 15px;
+    display: grid;
+    grid-template-areas:
+        'esq cen dir';
+    grid-template-columns: 2fr 4.5fr 2fr;
+    text-align: justify;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.info img,
+.info iframe {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+.agenda {
+    grid-area: esq;
+}
+
+.lanches {
+    grid-area: cen;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+    padding: 0px 15px;
+}
+
+.espacos {
+    grid-area: dir;
+}
+
+.footer {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 25px;
+}
+
+
+@media (min-width:700px) and (max-width:850px) {
+    .info {
+        background-color: rgb(25, 25, 25);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding:15px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .lanches {
+        border-left: 0px;
+        border-right: 0px;
+        padding: 10px 0px;
+        border-top: 1px white solid;
+        border-bottom: 1px white solid;
+    }
+}
+
+@media (min-width:550px) and (max-width:699.99px) {
+    .info {
+        background-color: rgb(25, 25, 25);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 15px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .lanches {
+        border-left: 0px;
+        border-right: 0px;
+        padding: 10px 0px;
+        border-top: 1px white solid;
+        border-bottom: 1px white solid;
+    }
+
+    .cab {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid rgb(255, 122, 26);
+        border-bottom: 1px solid rgb(255, 122, 26);
+    }
+
+    .cab img {
+        display: flex;
+        justify-self: center;
+    }
+
+    .menu {
+        display: flex;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-self: center;
+    }
+
+    .menu p {
+        font-size: 20px;
+    }
+
+    .cab img {
+        margin-left: 0px;
+        width: 50px;
+    }
+}
+
+@media (max-width:550px) {
+    .info {
+        background-color: rgb(25, 25, 25);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding:15px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .lanches {
+        border-left: 0px;
+        border-right: 0px;
+        padding: 10px 0px;
+        border-top: 1px white solid;
+        border-bottom: 1px white solid;
+    }
+
+    .cab {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid rgb(255, 122, 26);
+        border-bottom: 1px solid rgb(255, 122, 26);
+    }
+
+    .cab img {
+        display: flex;
+        justify-self: center;
+    }
+
+    .menu {
+        display: flex;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-self: center;
+        gap:5px;
+    }
+
+    .menu p {
+        font-size: 17px;
+    }
+
+    .cab img {
+        margin-left: 0px;
+        width: 50px;
+    }
+}
