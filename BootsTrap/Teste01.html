@@ -51,6 +51,21 @@
             <div class="col align-self-end">Bem?</div>
         </div>
     </div>
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on top
+    </button>
+    <button popovertarget="newsletter-box">
+        Mensagens diretas
+        Inscreva-se na nossa newsletter!
+    </button>
+    <div id="newsletter-box" popover>
+        <button class="close-btn" popovertarget="newsletter-box" popvertargetaction="hide">
+            <span aria-hidden="true">
+                X </span>
+        </button>
+        O conteúdo do meu popup lindão
+    </div>
 </body>
 
 </html>
